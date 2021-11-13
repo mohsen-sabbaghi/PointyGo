@@ -2993,3 +2993,26 @@ ol {
 /*color: #ff6b81;*/
   background-color: #fff;
 }
+
+.profile-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+.fund-list{
+  display: inline-block;
+  color: white;
+  text-align: left;
+  line-height: 2;
+}
+.fund-list i{
+  color: #081828;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
