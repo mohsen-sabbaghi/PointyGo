@@ -3186,7 +3186,51 @@ ol {
   border-radius: 10px;
 }
 
-.solution .section-title{
-  padding:0 200px;
-  margin-bottom: 40px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title {
+    padding: 0 200px;
+    margin-bottom: 70px
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    padding: 0 20px;
+    margin-bottom: 70px
+  }
+
+  .section-title h3 {
+    font-size: 14px
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px
+  }
+
+  .section-title p {
+    font-size: 14px
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    padding: 0 10px;
+    margin-bottom: 60px
+  }
+
+  .section-title h3 {
+    font-size: 14px
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 18px
+  }
+
+  .section-title p {
+    font-size: 14px
+  }
 }
