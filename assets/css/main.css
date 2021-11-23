@@ -3203,9 +3203,9 @@ ol {
 }
 
 /*=======================================*/
-
-
-
+section.contact-us{
+    padding-bottom: 20px;
+}
 .contact-form-head {
     background-image: url(../images/contact/contact-bg.jpg);
     background-size: cover;
@@ -3515,16 +3515,6 @@ ol {
     background-color: #f9f9f9
 }
 
-.contact-form-head .form-main .form .form-group.button {
-    width: 100%;
-    margin-bottom: 0
-}
-
-.contact-form-head .form-main .form .form-group.button .btn {
-    height: 50px;
-    border: none;
-    width: 100%
-}
 
 .contact-form-head .contact-inner-title .call-back i {
     font-size: 15px;
@@ -3588,6 +3578,87 @@ ol {
     width: 100%
 }
 
+
+.single-info {
+    background-color: rgba(255, 255, 255, .20);
+    margin-top: 30px;
+    position: relative;
+    padding: 20px;
+    padding-left: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(32, 32, 32, .11);
+    box-shadow: 0 1px 20px 0 rgba(32, 32, 32, .11);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.single-info:hover {
+    background-color: #e9a300
+}
+
+.single-info:hover i {
+    color: #fff
+}
+
+.single-info:hover h3 {
+    color: #fff
+}
+
+.single-info:hover ul li {
+    color: #fff
+}
+
+.single-info:hover ul li a {
+    color: #fff
+}
+
+.single-info:hover ul li a:hover {
+    opacity: .8 !important;
+    color: #fff
+}
+
+.single-info i {
+    font-size: 30px;
+    color: #e9a300;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.single-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff3cd;
+    margin-bottom: 15px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.single-info ul li {
+    display: block;
+    margin-bottom: 2px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-weight: 500
+}
+
+.single-info ul li:last-child {
+    margin: 0
+}
+
+.single-info ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.single-info ul li a:hover {
+    color: #e9a300
+}
 /*=======================================*/
 
 .profile-image {

@@ -530,39 +530,6 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-info">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-info">
-                            <i class="lni lni-map"></i>
-                            <h3>Address</h3>
-                            <ul>
-                                <li>Tehran, Iran</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-info">
-                            <i class="lni lni-phone"></i>
-                            <h3>Call us on</h3>
-                            <ul>
-                                <li><a href="tel:+989120148067">+98 912 014 8067 (Parsa)</a></li>
-                                <li><a href="tel:+989124402951">+98 912 440 2951 (Mohsen)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-12">
-                        <div class="single-info">
-                            <i class="lni lni-envelope"></i>
-                            <h3>Mail at</h3>
-                            <ul>
-                                <li><a href="mailto:info@pointygo.com">info@pointygo.com</a></li>
-                                <li><a href="mailto:webmaster@pointygo.com">webmaster@pointygo.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -574,6 +541,29 @@
                     <h2>Any Questions? <br>Send Message Us</h2>
                     <p>Just send us your questions or concerns to starting a new cooperation.</p>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="single-info">
+                            <i class="lni lni-phone"></i>
+                            <h3>Call us on</h3>
+                            <ul>
+                                <li><a href="tel:+989120148067">+98 912 014 8067 (Parsa)</a></li>
+                                <li><a href="tel:+989124402951">+98 912 440 2951 (Mohsen)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="single-info">
+                            <i class="lni lni-envelope"></i>
+                            <h3>Mail at</h3>
+                            <ul>
+                                <li><a href="mailto:info@pointygo.com">info@pointygo.com</a></li>
+                                <li><a href="mailto:webmaster@pointygo.com">webmaster@pointygo.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="form-main">
@@ -747,7 +737,7 @@
         });
 
         submit.on('click', function(e) {
-            info.html('Loading...').css('color', 'red').slideDown();
+            info.html('Red boxes are required...').css('color', 'red').slideDown();
             e.preventDefault();
             if(validate()) {
                 $.ajax({
@@ -756,6 +746,7 @@
                     data: form.serialize(),
                     dataType: "json"
                 }).done(function(data) {
+                    console.log(data)
                     if(data.success) {
                         email.val('');
                         subject.val('');
